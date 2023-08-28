@@ -21,11 +21,14 @@
             font-family: 'Poppins', sans-serif;
         }
     </style>
+
+    <!-- added font awesome -->
+    <script src="https://kit.fontawesome.com/2e285c83b5.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="font-poppins">
     <!-- header section -->
-    <header class="pt-12 px-28 bg-[#f3f8ff] h-screen">
+    <header class="pt-12 px-28 bg-[#f3f8ff]">
         <div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 items-center justify-between">
             <h4 class="font-bold text-xl">Hot Gadgets</h4>
             <button class="btn text-white bg-[#0D6EFD] rounded-lg">Buy Now</button>
@@ -34,7 +37,9 @@
         <!-- banner section -->
         <div class="text-center pt-20 space-y-6">
             <h1 class="text-2xl lg:text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
-            <p class="text-base">There are many variations of passages of Lorem Ipsum available, but the majority <br>
+            <p class="text-base">There are many variations of passages of Lorem Ipsum available, but
+                the
+                majority <br>
                 have suffered alteration in some form, by injected humou.</p>
             <button class="btn text-white bg-[#0D6EFD] rounded-lg">Sign Up</button>
         </div>
@@ -42,9 +47,24 @@
 
     <!-- main section -->
     <main>
-        <section>
-            <div id="phone-container" class="grid grid-cols-3 gap-6 w-3/4 mx-auto">
+        <!-- section -->
+        <section class="text-center mt-28">
+            <h1 class="font-semibold text-4xl mb-7">Search your phone</h1>
+            <div>
+                <input id="search-field" class="pl-5 bg-[#f3f3f3] w-2/4 rounded-lg mb-12 h-12" type="text" name="" id=""
+                    placeholder="Search your phone">
+                <button onclick="handleSearch()" class="btn bg-[#0D6EFD] text-white">Search</button>
+            </div>
+        </section>
 
+        <section>
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-3/4 mx-auto">
+
+            </div>
+
+            <!-- show all button -->
+            <div class="hidden text-center mt-12" id="show-all-container">
+                <button class="btn text-white bg-[#0D6EFD] rounded-lg">Show All</button>
             </div>
         </section>
     </main>
