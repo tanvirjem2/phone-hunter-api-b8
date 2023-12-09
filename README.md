@@ -1,48 +1,48 @@
-# 86-PHero-tube-b8
+# Phone Hunter API (phone-hunter-api-b8)
 
-Welcome to 86-PHero-tube-b8, a simple and stylish video platform that allows you to explore and enjoy content across various categories. This project, developed using HTML, CSS, and JavaScript, provides an intuitive interface for sorting videos by views. Let's dive into the details!
+Welcome to the Phone Hunter API, a powerful API built in JavaScript that offers seamless search functionality for discovering mobile phones and related products. This API allows users to search for specific products and provides an initial set of 6 related products, with the option to load more for a comprehensive view. Let's dive into the details!
 
 ## Features
 
-1. **Video Categories:**
-   - **ALL:** Explore all available videos.
-   - **MUSIC:** Discover a variety of music-related videos.
-   - **COMEDY:** Enjoy a good laugh with comedy videos.
-   - **DRAWING:** Immerse yourself in the creative world of drawing. (Note: The Drawing section currently has no videos.)
+1. **Search Functionality:**
+   - Conduct searches to find specific mobile phones or related products.
+   - Example: Searching for "iphone" will return all Apple products.
 
-2. **Sort by View:**
-   - Use the "Sort by View" button to arrange videos based on their view count.
+2. **Initial Results:**
+   - The API displays an initial set of 6 related products for quick reference.
 
-3. **Blog Section:**
-   - Find insightful content in the "Blog" section. Click the button to access related blog posts.
+3. **Load More Products:**
+   - Click on the "Show All" button to load all related products for a comprehensive view.
 
 ## Getting Started
 
-To set up and run the project locally, follow these simple steps:
+To integrate Phone Hunter API into your project, follow these steps:
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/86-PHero-tube-b8.git
-    ```
+1. **API Base URL:**
+   - Use the base URL `https://api.phonehunter.com` for your API requests.
 
-2. **Open the project folder:**
-    ```bash
-    cd 86-PHero-tube-b8
-    ```
+2. **Search Endpoint:**
+   - Perform searches using the `/search` endpoint.
+   - Example: `https://api.phonehunter.com/search?q=iphone`
 
-3. **Open the `index.html` file in your preferred web browser.**
+3. **Load More Endpoint:**
+   - To load more products, use the `/load-more` endpoint.
+   - Example: `https://api.phonehunter.com/load-more?q=iphone&page=2`
 
 ## Usage
 
-1. Choose a category from the navigation bar: ALL, MUSIC, COMEDY, DRAWING.
-2. Explore videos within the selected category.
-3. Use the "Sort by View" button to organize videos based on their view count.
-4. Check out the Blog section for additional content.
+1. **Perform a Search:**
+   - Use the search functionality by making a GET request to the `/search` endpoint with the desired query.
+   - Example: `https://api.phonehunter.com/search?q=iphone`
+
+2. **Initial Results:**
+   - View the initial 6 related products provided in the response.
+
+3. **Load More Products:**
+   - Click on the "Show All" button to load additional products using the `/load-more` endpoint.
 
 ## Technologies Used
 
-- HTML
-- CSS
 - JavaScript
 
 ## Contributing
